@@ -31,7 +31,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Construido para praticar animation, JavaScript
+Construido para praticar animation, JavaScript, com o biscoito animado, cada vez que clicar nele envia uma mensagem aleatória.
 
 
 
