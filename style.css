@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 62.5%;
+}
+
+.hide {
+  display: none;
+}
+
+body {
+  display: grid;
+  place-items: center;
+
+  height: 100vh;
+  background: linear-gradient(45deg, #190361, #bb00ff);
+  animation: gradient 10s ease infinite;
+  background-size: 200% 200%;
+}
+
+main {
+  width: 42.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.8);
+
+  background: #fff;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.4rem;
+  font-family: "Montserrat", sans-serif;
+  color: #34355b;
+  font-weight: 700;
+}
+
+p {
+  color: #34355b;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+
+  margin-top: 1.4rem;
+}
+
+#toOpen {
+  outline: none;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+img {
+  margin-top: 2rem;
+}
+
+.screen2 {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.screen2 h2 {
+  text-align: center;
+  font-size: 2.4rem;
+  font-family: "Montserrat", sans-serif;
+  color: #34355b;
+  font-weight: 700;
+}
+
+.screen2 p {
+  font-size: 2.4rem;
+  font-family: "Dancing Script";
+  font-weight: 400;
+  background: #e4edf1;
+  box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.5);
+
+  margin-top: 2.7rem;
+}
+
+.screen2 img {
+  margin-top: 4.3rem;
+}
+
+#toClose {
+  width: 17.4rem;
+  height: 5.2rem;
+
+  color: #fff;
+  background: #ff9500;
+
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+
+  padding: 1.6rem;
+  margin-top: 1.7rem;
+  margin-left: 6.3rem;
+
+  border-radius: 0.4rem;
+  border: none;
+}
+
+@keyframes fade-in {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.image-container #randomMessage {
+  animation: fade-in-from-bottom 1s ease-in-out;
+}
+
+.fade-in {
+  animation: fade-in 1s ease-in-out; /* Use a duração desejada */
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes vibrate {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-0.1rem) rotate(-0.2deg);
+  }
+  40% {
+    transform: translateX(0.1rem) rotate(0.2deg);
+  }
+  60% {
+    transform: translateX(-0.1rem) rotate(0.2deg);
+  }
+  80% {
+    transform: translateX(0.1rem) rotate(2deg);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-vibrate {
+  animation: vibrate 0.3s linear infinite; /* Pode ajustar a duração e o tipo de animação */
+}
